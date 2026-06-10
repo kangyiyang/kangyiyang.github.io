@@ -232,7 +232,7 @@ h3 {
   border: 5px solid #fff;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 58% 42%;
+  object-position: center;
   background: var(--surface-soft);
   box-shadow: 0 16px 34px rgba(24, 32, 29, 0.12);
 }
