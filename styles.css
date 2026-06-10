@@ -369,7 +369,8 @@ h3 {
   display: grid;
   gap: 10px;
   align-items: center;
-  justify-items: start;
+  justify-items: center;
+  text-align: center;
 }
 
 .timeline-logo {
@@ -401,6 +402,8 @@ h3 {
   color: var(--gold);
   font-size: 14px;
   font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .timeline-item p {
