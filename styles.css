@@ -215,8 +215,10 @@ h3 {
 .profile-panel {
   display: grid;
   gap: 22px;
-  align-self: stretch;
-  justify-items: start;
+  align-self: center;
+  align-content: center;
+  justify-items: center;
+  min-height: 520px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -225,11 +227,14 @@ h3 {
 }
 
 .profile-photo {
-  width: 100%;
+  width: min(100%, 260px);
   aspect-ratio: 1;
-  border-radius: var(--radius);
+  border: 5px solid #fff;
+  border-radius: 50%;
   object-fit: cover;
+  object-position: 58% 42%;
   background: var(--surface-soft);
+  box-shadow: 0 16px 34px rgba(24, 32, 29, 0.12);
 }
 
 .profile-panel h2 {
@@ -237,20 +242,13 @@ h3 {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 24px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .profile-panel p {
   margin-bottom: 4px;
+  text-align: center;
   color: var(--muted);
-}
-
-.contact-lines {
-  display: grid;
-  gap: 6px;
-  width: 100%;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  overflow-wrap: anywhere;
 }
 
 .compact-section {
@@ -387,12 +385,40 @@ h3 {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
+  grid-template-columns: 160px minmax(0, 1fr);
   gap: 20px;
+  align-items: center;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.82);
+}
+
+.timeline-meta {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-items: start;
+}
+
+.timeline-logo {
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  object-fit: contain;
+}
+
+.company-logo {
+  width: 144px;
+  height: 62px;
+  padding: 8px 10px;
+}
+
+.wide-logo {
+  width: 150px;
 }
 
 .time {
