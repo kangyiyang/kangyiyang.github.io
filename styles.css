@@ -285,8 +285,7 @@ h3 {
 
 .pub-media img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
+  height: auto;
   transition: transform 180ms ease;
 }
 
