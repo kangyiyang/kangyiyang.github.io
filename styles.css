@@ -263,6 +263,10 @@ h3 {
   margin-bottom: 8px;
 }
 
+.section-heading--single {
+  grid-template-columns: 1fr;
+}
+
 .publication {
   display: grid;
   grid-template-columns: minmax(260px, 0.44fr) minmax(0, 0.56fr);
