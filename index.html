@@ -19,8 +19,8 @@
     <a class="brand" href="#top" aria-label="Yikang Yang home">Yikang Yang</a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#top">Home</a>
-      <a href="#research">Research</a>
       <a href="#education">Education</a>
+      <a href="#research">Research</a>
       <a href="#experience">Experience</a>
     </nav>
   </header>
@@ -56,6 +56,39 @@
           <p>Nanjing University</p>
         </div>
       </aside>
+    </section>
+
+    <section id="education" class="section split-section">
+      <div class="section-heading section-heading--single">
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <img src="assets/nju.svg" alt="Nanjing University logo" class="timeline-logo">
+            <div class="time">2024.09 - Present</div>
+          </div>
+          <div>
+            <h3>Nanjing University</h3>
+            <p class="timeline-role">M.S. in Computer Science</p>
+            <p>School of Intelligent Science and Technology</p>
+            <p>Advisor: <a href="https://yoyo000.github.io/" target="_blank" rel="noreferrer">Prof. Yao Yao</a></p>
+            <p>Research: 3D Generation · 3D Agents · World Models · Parametric CAD</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <img src="assets/xjtu.png" alt="Xi'an Jiaotong University logo" class="timeline-logo">
+            <div class="time">2020.09 - 2024.06</div>
+          </div>
+          <div>
+            <h3>Xi'an Jiaotong University</h3>
+            <p class="timeline-role">B.S. in Artificial Intelligence</p>
+            <p>Institute of Artificial Intelligence and Robotics</p>
+            <p>GPA: 3.89 / 4.3</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="research" class="section">
@@ -95,7 +128,7 @@
           <img src="assets/p3d-bench-teaser.png" alt="P3D-Bench benchmark teaser">
         </a>
         <div class="pub-content">
-          <p class="venue">arXiv 2026</p>
+          <p class="venue">Preprint 2026</p>
           <h3>
             <a href="https://arxiv.org/abs/2606.11152" target="_blank" rel="noreferrer">
               P3D-Bench: Benchmarking MLLMs for Parametric 3D Generation and Structural Reasoning
@@ -148,38 +181,9 @@
       </article>
     </section>
 
-    <section id="education" class="section split-section">
-      <div class="section-heading section-heading--single">
-        <h2>Education</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <img src="assets/nju.svg" alt="Nanjing University logo" class="timeline-logo">
-            <div class="time">2024.09 - Present</div>
-          </div>
-          <div>
-            <h3>Nanjing University</h3>
-            <p>M.S. in Computer Science, School of Intelligent Science and Technology</p>
-            <p>Supervisor: <a href="https://yoyo000.github.io/" target="_blank" rel="noreferrer">Prof. Yao Yao</a></p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <img src="assets/xjtu.png" alt="Xi'an Jiaotong University logo" class="timeline-logo">
-            <div class="time">2020.09 - 2024.06</div>
-          </div>
-          <div>
-            <h3>Xi'an Jiaotong University</h3>
-            <p>B.S. in Artificial Intelligence, Institute of Artificial Intelligence and Robotics</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <section id="experience" class="section split-section">
       <div class="section-heading section-heading--single">
-        <h2>Experiences</h2>
+        <h2>Experience</h2>
       </div>
       <div class="timeline">
         <article class="timeline-item">
@@ -188,8 +192,13 @@
             <div class="time">2025.12 - 2026.08</div>
           </div>
           <div>
-            <h3>Intern</h3>
-            <p><a href="https://www.neural4d.com/home" target="_blank" rel="noreferrer">DreamTech</a></p>
+            <h3><a href="https://www.neural4d.com/home" target="_blank" rel="noreferrer">DreamTech Coala</a></h3>
+            <p class="timeline-role">Algorithm Research Intern · Shenzhen, China</p>
+            <ul class="timeline-details">
+              <li>Built an LLM-agent workflow that converts a single image into a complete 3D scene by orchestrating image generation, native 3D APIs, and scene-assembly tools.</li>
+              <li>Developed video-to-video stylization with Wan, Seedance, and Luna using re-denoising, prompt design, and temporal stitching for stronger visual consistency.</li>
+              <li>Developed LLM-driven parametric CAD generation and automated evaluation for the Coala Agent prototype.</li>
+            </ul>
           </div>
         </article>
         <article class="timeline-item">
@@ -198,8 +207,11 @@
             <div class="time">2023.10 - 2024.01</div>
           </div>
           <div>
-            <h3>Intern</h3>
-            <p><a href="https://www.bjxxtech.net/html/briefN/" target="_blank" rel="noreferrer">PolarBearTech / BJXX Tech</a></p>
+            <h3><a href="https://www.bjxxtech.net/html/briefN/" target="_blank" rel="noreferrer">PolarBearTech / BJXX Tech</a></h3>
+            <p class="timeline-role">Algorithm Intern · Xi'an, China</p>
+            <ul class="timeline-details">
+              <li>Optimized autonomous-driving models for inference efficiency through activation-function studies and experiments with lightweight architectures including ShuffleNet and MobileNet.</li>
+            </ul>
           </div>
         </article>
       </div>

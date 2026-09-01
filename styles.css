@@ -115,6 +115,10 @@ img {
   padding: 74px 0;
 }
 
+section[id] {
+  scroll-margin-top: 84px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
@@ -361,7 +365,7 @@ h3 {
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
   gap: 20px;
-  align-items: center;
+  align-items: start;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -412,6 +416,22 @@ h3 {
 .timeline-item p {
   margin-bottom: 4px;
   color: var(--muted);
+}
+
+.timeline-item .timeline-role {
+  margin-bottom: 8px;
+  color: #293531;
+  font-weight: 700;
+}
+
+.timeline-details {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.timeline-details li + li {
+  margin-top: 8px;
 }
 
 .site-footer {
@@ -508,6 +528,10 @@ h3 {
 
   .section {
     padding: 52px 0;
+  }
+
+  section[id] {
+    scroll-margin-top: 132px;
   }
 
   h1 {
