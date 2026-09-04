@@ -10,6 +10,7 @@
   --gold: #b7782f;
   --shadow: 0 18px 45px rgba(24, 32, 29, 0.08);
   --radius: 8px;
+  --content-width: 1000px;
 }
 
 * {
@@ -65,7 +66,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  width: min(1120px, calc(100% - 36px));
+  width: min(var(--content-width), calc(100% - 36px));
   margin: 0 auto;
   padding: 18px 0;
   backdrop-filter: blur(18px);
@@ -110,9 +111,9 @@ img {
 }
 
 .section {
-  width: min(1120px, calc(100% - 36px));
+  width: min(var(--content-width), calc(100% - 36px));
   margin: 0 auto;
-  padding: 74px 0;
+  padding: 44px 0;
 }
 
 section[id] {
@@ -122,10 +123,9 @@ section[id] {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
-  gap: 46px;
+  gap: 38px;
   align-items: center;
-  min-height: calc(100vh - 74px);
-  padding-top: 42px;
+  padding-top: 36px;
 }
 
 .hero-copy {
@@ -222,7 +222,7 @@ h3 {
   align-self: center;
   align-content: center;
   justify-items: center;
-  min-height: 440px;
+  min-height: 400px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -413,7 +413,7 @@ h3 {
 }
 
 .site-footer {
-  width: min(1120px, calc(100% - 36px));
+  width: min(var(--content-width), calc(100% - 36px));
   margin: 0 auto;
   padding: 22px 0 38px;
   border-top: 1px solid var(--line);
@@ -478,7 +478,7 @@ h3 {
   .site-header,
   .section,
   .site-footer {
-    width: min(100% - 28px, 1120px);
+    width: min(100% - 28px, var(--content-width));
   }
 
   .brand {
@@ -500,7 +500,7 @@ h3 {
   }
 
   .section {
-    padding: 52px 0;
+    padding: 38px 0;
   }
 
   section[id] {
